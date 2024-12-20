@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  blockchain:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: projeto_blockchain
+    volumes:
+      - ./app:/app
+    ports:
+      - "5000:5000"  # Mapeando a porta 5000 (correspondente ao Flask)
+    restart: always
