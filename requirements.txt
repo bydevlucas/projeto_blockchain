@@ -1,0 +1,19 @@
+# Flask para criar uma API 
+Flask==2.3.3
+
+# Gunicorn para rodar a aplicação em produção
+gunicorn==21.1.0
+
+# PyCrypto ou hashlib para criptografia e hashing (já usamos hashlib no exemplo)
+pycryptodome==3.18.0
+
+# Requests para interações HTTP (opcional, se houver comunicação entre nós)
+requests==2.31.0
+
+# pytest para rodar os testes
+pytest==7.4.0
+
+# pytest-cov para cobertura de testes
+pytest-cov==4.1.0
+
+# Outras dependências (se necessário)
