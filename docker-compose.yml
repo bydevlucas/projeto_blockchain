@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 version: "3.9"
 
 services:
@@ -11,3 +12,18 @@ services:
     ports:
       - "5000:5000"  # Mapeando a porta 5000 (correspondente ao Flask)
     restart: always
+=======
+version: "3.9"
+
+services:
+  blockchain:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: projeto_blockchain
+    volumes:
+      - ./app:/app
+    ports:
+      - "5000:5000"  # Mapeando a porta 5000 (correspondente ao Flask)
+    restart: always
+>>>>>>> dcaf25c5e5290811ee816302ff867b98749dd2ca
