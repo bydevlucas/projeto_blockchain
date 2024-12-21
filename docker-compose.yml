@@ -9,5 +9,6 @@ services:
     volumes:
       - ./app:/app
     ports:
-      - "5000:5000"  # Mapeando a porta 5000 (correspondente ao Flask)
+      - "5000:5000"
+    command: python /app/app.py
     restart: always
